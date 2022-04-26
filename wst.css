@@ -1,11 +1,10 @@
 body {
     margin: 0;
+    font-family: sans-serif;
 }
 
 nav {
     display: flex;
-    position: sticky;
-    top: 0;
     border-bottom: .75px solid black;
     font-family: sans-serif;
     justify-content: space-between;
@@ -37,6 +36,7 @@ nav ul li a {
 
 .numbers {
     position: sticky;
+    z-index: 2;
     top: 0;
     min-height: 8vh;
     background-color: rgb(235, 154, 154);
@@ -47,11 +47,79 @@ nav ul li a {
     background-color: white;
 }
 
-#q1 {
+#professional-career {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 8vh;
 }
 
-#professional-career {
+#professional-career-text {
+    /* background-color: rgb(236, 236, 236); */
+    display: flex;
+    align-items: center;
+    background-color: #c7c2ad;
+    border-radius: 5px;
+    padding: 30px;
+    max-width: 50vw;
+    max-height: 300px;
+    word-wrap: break-word;
+    font-size: 1.25rem;
+}
+
+#professional-career h3 {
+    z-index: 1;
+    writing-mode: vertical-lr;
+    transform: rotate(180deg);
+    display: inline-block;
+    color: #c7360d;
+    text-align: center;
+    margin: 0;
+    padding-left: 10px;
+}
+
+#professional-career p {
     max-width: 40vw;
+    display: inline-block;
+    margin: 0;
+}
+
+#professional-career img {
+    max-width: 25vw;
+    max-height: 50vw;
+}
+
+#tech-journey {
+    display: flex;
+    justify-content: center;
+    gap: 5vw;
+}
+
+#tech-journey h3 {
+    text-align: left;
+    font-size: 4em;
+    padding-top: 5vh;
+}
+
+#tech-journey-inner {
+    display: flex;
+    height: 400px;
+    width: 500px;
+    /* justify-content: center; */
+    align-items: center;
+    background-color: #c7360d;
+    border-radius: 100%;
+    color: white;
+    text-align: center;
+    padding: 25px;
+    font-size: 1.25em;
+}
+
+#coding-experience {
+    display: flex;
+    margin-top: 10vh;
+}
+
+#coding-experience-text {
+    max-width: 50vw;
 }
