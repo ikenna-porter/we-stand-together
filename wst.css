@@ -120,6 +120,40 @@ nav ul li a {
     margin-top: 10vh;
 }
 
+#coding-experience>h3:first-child {
+    /* targets "coding" part of title */
+    z-index: 1;
+    writing-mode: vertical-lr;
+    transform: rotate(180deg);
+    display: inline-block;
+    color: #c7360d;
+    text-align: right;
+    margin: 0;
+    padding-left: 10px;
+    text-align: center;
+    font-size: 3em;
+}
+
+#coding-experience>div:nth-child(2) {
+    display: flex;
+    flex-direction: column;
+}
+
+#coding-experience>div:nth-child(2)>h3 {
+    /* targets "experience" part of title */
+    margin: 0;
+    font-size: 3em;
+    justify-content: center;
+}
+
 #coding-experience-text {
-    max-width: 50vw;
+    max-width: 30vw;
+    padding: 15px;
+    border-radius: 5px;
+    background-color: #006ebb;
+}
+
+#tech-logos>img {
+    height: 30vh;
+    width: 20vw;
 }
