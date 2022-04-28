@@ -120,7 +120,8 @@ nav ul li a {
     margin-top: 10vh;
     justify-content: space-evenly;
 }
-#coding-experience > div:first-child {
+
+#coding-experience>div:first-child {
     display: flex;
 }
 
@@ -172,13 +173,13 @@ nav ul li a {
     margin-top: 150px;
 }
 
-#q1 > div:nth-child(4) {
+#q1>div:nth-child(4) {
     margin: auto;
     width: 50%;
     height: 450px
 }
 
-#q1 > div:nth-child(4) > div {
+#q1>div:nth-child(4)>div {
     display: flex;
     justify-content: center;
     align-items: center;
